@@ -4,8 +4,10 @@
 /* -------- Variables -------- */
 :root {
   --primary-color: #e0bc75;
+  --primary-hover: #af935b;
   --white: #ffffff;
   --secondary-white: #F7F8FC;
+  --offwhite: #F5F5F5;
   --black: #000000;
 }
 
@@ -86,7 +88,7 @@ nav {
 }
 
 .menu a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .menu-icon {
@@ -187,12 +189,17 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero a:hover {
+  background-color: var(--primary-hover);
 }
 
 /* -------- Home Page CSS For Touch Screen Devices -------- */
 @media only screen and (max-width: 950px) {
   .banner {
-    margin: 0;
+    margin: 0 20px;
   }
 
   .wrapper {
@@ -265,4 +272,353 @@ nav {
   text-transform: capitalize;
   font-weight: 500;
   letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.service a:hover {
+  background-color: var(--primary-hover);
+}
+
+/* -------- About Us Page CSS Starts Here -------- */
+.about-us {
+  background-image: linear-gradient(76deg,
+      rgba(100, 100, 110, 0.83),
+      rgba(25, 26, 31, 0.28)), url(https://nuuk-e3eaa.firebaseapp.com/assets/img/banner-2.jpg);
+  background-attachment: fixed;
+  padding: 50px 0;
+  margin: 0 40px;
+}
+
+.about-us h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: var(--white);
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-content img {
+  width: 500px;
+  margin-right: 50px;
+  filter: grayscale(80%);
+}
+
+.about-us-content p {
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.about-us-content a {
+  color: var(--white);
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all .2s ease-in-out;
+}
+
+.about-us-content a:hover {
+  background-color: var(--primary-hover);
+}
+
+/* -------- About Us Page For Touch Screen Devices -------- */
+@media only screen and (max-width: 1350px) {
+  .about-us {
+    margin: 0 20px;
+  }
+
+  .about-us-content img {
+    margin: 0;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .about-us-content img {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about-us-content img {
+    width: 300px;
+  }
+}
+
+/* -------- Testimonials Page CSS Starts Here -------- */
+.testimonials {
+  margin: 30px 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.testimonial-card {
+  background-color: var(--offwhite);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .testimonial-text {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.testimonial-card .testimonial-author {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+/* -------- ReModelling Project Page CSS Starts Here -------- */
+.project-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.project-section h2 {
+  font-size: 36px;
+  font-size: 2.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-details {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-details img {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.project-description p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.project-description ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.project-description li {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+/* -------- ReModelling Project Page For Touch Screen Devices -------- */
+@media only screen and (max-width: 1380px) {
+  .project-details img {
+    width: 400px;
+  }
+
+  .project-section {
+    margin: 0 20px;
+  }
+
+  .project-details {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .project-details img {
+    width: 300px;
+  }
+}
+
+/* -------- Contact Us Page CSS Starts Here -------- */
+#contact {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--primary-color);
+  font-size: 16px;
+  padding: 5px;
+  resize: none;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary-hover);
+}
+
+/* -------- Footer Page CSS Starts Here -------- */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+footer ul li {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+footer ul li i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+footer hr {
+  border-color: #fff;
+}
+
+footer p.text-center {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icons li a:hover {
+  color: var(--primary-hover);
 }
