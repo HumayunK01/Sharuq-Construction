@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- -------- Linking FontAwesome CDN File -------- -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css" />
     <!-- -------- Linking Custom CSS File -------- -->
     <link rel="stylesheet" href="style.css">
     <!-- -------- Linking Favicon Icon -------- -->
@@ -22,8 +24,8 @@
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">ReModelling Project</a></li>
                 <li><a href="#">Contact</a></li>
@@ -31,12 +33,41 @@
         </nav>
     </header>
     <!-- -------- Home Page Starts Here -------- -->
-    <section class="banner">
+    <section class="banner" id="home">
         <div class="wrapper">
             <div class="hero">
                 <h1>You Dream, We Create</h1>
                 <p>We turn your ideas to reality. We don't stop until you're satisfied.</p>
                 <a href="#">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+    <!-- -------- Services Page Starts Here -------- -->
+    <section id="services">
+        <div class="wrapper">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <img src="assets/service1.jpg" alt="Service 1">
+                    <h3>Service 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel erat sed nibh fringilla
+                        molestie. Donec lacinia a ex eu fermentum. Sed dapibus purus sed erat consequat bibendum.</p>
+                    <a href="#"><i class="fa-duotone fa-info"></i> Learn More</a>
+                </div>
+                <div class="service">
+                    <img src="assets/service2.jpg" alt="Service 2">
+                    <h3>Service 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel erat sed nibh fringilla
+                        molestie. Donec lacinia a ex eu fermentum. Sed dapibus purus sed erat consequat bibendum.</p>
+                    <a href="#"><i class="fa-duotone fa-info"></i> Learn More</a>
+                </div>
+                <div class="service">
+                    <img src="assets/service3.jpg" alt="Service 3">
+                    <h3>Service 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel erat sed nibh fringilla
+                        molestie. Donec lacinia a ex eu fermentum. Sed dapibus purus sed erat consequat bibendum.</p>
+                    <a href="#"><i class="fa-duotone fa-info"></i> Learn More</a>
+                </div>
             </div>
         </div>
     </section>
