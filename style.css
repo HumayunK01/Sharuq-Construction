@@ -279,6 +279,22 @@ nav {
   background-color: var(--primary-hover);
 }
 
+.know_more {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--black);
+  padding: 10px 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+  margin-top: 40px;
+}
+
+.know_more:hover {
+  background-color: var(--primary-hover);
+}
+
 /* -------- About Us Page CSS Starts Here -------- */
 .about-us {
   background-image: linear-gradient(76deg,
